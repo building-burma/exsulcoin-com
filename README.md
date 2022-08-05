@@ -1,2 +1,2 @@
-# exsulcoin-com
-Exsulcoin Website
+# Exsulcoin-com
+Source code for the Exsulcoin website.
