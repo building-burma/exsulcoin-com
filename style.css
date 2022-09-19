@@ -1,3 +1,6 @@
+/* All code copyright Exsulcoin. All rights reserved. */
+/* exsulcoin.com */
+
 /* poppins-200 - latin */
 @font-face {
     font-family: 'Poppins';
@@ -82,8 +85,6 @@
          url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
   }
 
-  /* @buildingburma */
-
 * {
     margin: 0;
     padding: 0;
@@ -95,7 +96,7 @@
 }
 
 :root {
-    --color-primary: #6c6c6c;
+    --color-primary: #6c6cff;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #f75842;
@@ -114,11 +115,14 @@
 }
 
 body {
-    font-family: "monserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.7;
     color: var(--color-white);
     background: var(--color-bg);
 }
+
+/* download font files so users do not have location logged by Google */
+/* @buildingburma */
 
 .container {
     width: var(--container-width-lg);
@@ -156,4 +160,31 @@ h4 {
 
 a {
     color: var(--color-white); 
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition)
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
 }
